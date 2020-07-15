@@ -1,0 +1,25 @@
+{
+  "name": "wdcc-app-template",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Andrew Watkins",
+  "license": "MIT",
+  "dependencies": {
+    "@auth0/nextjs-auth0": "^0.6.0",
+    "dotenv": "^8.2.0",
+    "n-readlines": "^1.0.0",
+    "next": "latest",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "recharts": "^1.8.5",
+    "standard": "^14.3.4"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "^9.8.5",
+    "tailwindcss": "^1.4.6"
+  }
+}
