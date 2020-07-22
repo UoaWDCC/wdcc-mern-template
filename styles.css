@@ -1,17 +1,37 @@
 /* purgecss start ignore */
 @tailwind base;
 h1 {
-  @apply text-2xl;
+  @apply text-3xl font-thin leading-loose;
 }
 h2 {
-  @apply text-xl;
+  @apply text-2xl font-thin leading-loose;
 }
 h3 {
-  @apply text-lg;
+  @apply text-xl font-thin leading-loose;
+
 }
-/* a {
+h4 {
+  @apply font-semibold;
+}
+ul {
+  @apply list-disc;
+  @apply list-inside;
+}
+p {
+  @apply mb-1
+}
+
+article a {
   @apply text-blue-600 underline;
-} */
+}
+
+.btn-blue {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+
 
 @tailwind components;
 /* purgecss end ignore */
