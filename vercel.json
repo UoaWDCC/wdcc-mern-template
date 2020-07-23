@@ -4,10 +4,11 @@
       "AUTH0_DOMAIN": "dev-so1al4mm.au.auth0.com",
       "AUTH0_CLIENT_ID": "QuMmUTJm7sVpOc6z0XkJ3SLw9Qndiybr",
       "AUTH0_CLIENT_SECRET": "@auth0_client_secret",
-      "REDIRECT_URI": "https://wdcc-mern-template.vercel.app/api/callback",
-      "POST_LOGOUT_REDIRECT_URI": "https://wdcc-mern-template.vercel.app",
+      "REDIRECT_URI": "https://wdcc-mern-template.andrew-omgtech.vercel.app/api/callback",
+      "POST_LOGOUT_REDIRECT_URI": "https://wdcc-mern-template.andrew-omgtech.vercel.app",
       "SESSION_COOKIE_SECRET": "@session_cookie_secret",
-      "HOST":"https://wdcc-mern-template.andrew-omgtech.vercel.app"
+      "HOST":"https://wdcc-mern-template.andrew-omgtech.vercel.app",
+      "MONGODB_URI":"@mongodb_uri"
     }
   }
 }
