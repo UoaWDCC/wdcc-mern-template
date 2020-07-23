@@ -4,6 +4,7 @@ import { useFetchUser } from '../lib/user'
 import config from '../lib/config'
 import EventsTable from '../components/EventsTable'
 
+
 function Report ({ events }) {
   // set required to true to force the page to require login.
   const { user, loading } = useFetchUser({ required: true })

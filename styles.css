@@ -32,7 +32,6 @@ article a {
   @apply bg-blue-700;
 }
 
-
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;

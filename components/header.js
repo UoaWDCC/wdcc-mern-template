@@ -24,7 +24,7 @@ function Header ({ user, loading }) {
           {!loading &&
             (user ? (
               <>
-                <MenuItem href='/report'>
+                <MenuItem href='/reportSWR'>
                 Report
                 </MenuItem>
                 <MenuItem href='/api/logout'>
