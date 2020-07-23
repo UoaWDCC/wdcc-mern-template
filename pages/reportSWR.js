@@ -8,8 +8,6 @@ import Spinner from '../components/Spinner'
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
-const Loading = () => <div className='lds-ellipsis' />
-
 /** Demonstrate Next SWR
  * https://swr.vercel.app/
  */
@@ -21,7 +19,7 @@ function Report () {
   return (
     <Layout user={user} loading={loading}>
       <h1>Results {loading && <Spinner />} {data && data.length}</h1>
-      {error && <p className='text-red'>Failed to load event data</p>}
+      {error && <p className='panel-error'>Failed to load event data</p>}
       {data && <EventsTable events={data} />}
     </Layout>
   )

@@ -7,12 +7,11 @@ Create a full stack web application that
 * gets and posts data to the server API 
 * handle API requests and store data in the database.
 
-More information on the process see
-* [Analysis](docs/Analysis.md)
-* [Todo list](docs/Actions.md)
+More information 
+* [Task list](docs/Tasks.md)
 * [Auth0 setup](docs/Auth0Setup.md)
-* [Bug reports](docs/Bugs.md)
-* [AWS Pillars](docs/Pillars.md)
+* [Database setup](docs/database.md)
+* [Vercel setup](docs/Vercel.md)
 
 ### Local development
 * Create and checkout a new repository based on this template.
