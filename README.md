@@ -37,6 +37,8 @@ More information
 * [Auth0 setup](docs/Auth0Setup.md)
 * [Database setup](docs/database.md)
 * [Vercel setup](docs/Vercel.md)
+* [TailwindsCSS styling](https://tailwindcss.com/)
+
 
 ### Local development
 * Create and checkout a new repository based on this template.

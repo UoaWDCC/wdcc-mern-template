@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "next -p 3141",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint" : "standard",
+    "fix" : "standard --fix"
   },
   "author": "Andrew Watkins",
   "license": "MIT",
@@ -17,12 +19,12 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "recharts": "^1.8.5",
-    "standard": "^14.3.4",
     "swr": "^0.2.3"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.5",
+    "standard": "^14.3.4",
     "tailwindcss": "^1.4.6"
   }
 }
