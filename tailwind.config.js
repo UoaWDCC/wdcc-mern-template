@@ -6,7 +6,7 @@ module.exports = {
       body: ['Roboto', 'sans-serif']
     },
     container: {
-      center: true,
+      center: true
     },
     extend: {
       colors: {

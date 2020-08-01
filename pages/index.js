@@ -20,7 +20,7 @@ function Home () {
       value: value
       // date: added server side so we can't lie
     }
-    const res = await fetch(`${config.HOST}/api/events`, {
+    await fetch(`${config.HOST}/api/events`, {
       method: 'post',
       body: JSON.stringify(event)
     })
