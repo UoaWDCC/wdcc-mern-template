@@ -4,8 +4,11 @@
     "dev": "next -p 3141",
     "build": "next build",
     "start": "next start",
-    "lint" : "standard",
-    "fix" : "standard --fix"
+    "lint": "standard",
+    "fix": "standard --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "author": "Andrew Watkins",
   "license": "MIT",
@@ -24,6 +27,13 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.5",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.2.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^26.2.2",
     "standard": "^14.3.4",
     "tailwindcss": "^1.4.6"
   }
