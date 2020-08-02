@@ -17,8 +17,9 @@ This template provides an initial application with the following features
 * Demonstrate use of Next server side rendering
 * Demonstrate Next SWR data fetching
 * Styling using TailwindsCSS
+* Jest Unit testing
 
-
+## The App.
 On the home page you first have to log in.  
 
 Once signed in via Auth0 you then see a profile panel with your name and avatar and a button.
@@ -38,7 +39,7 @@ More information
 * [Database setup](docs/database.md)
 * [Vercel setup](docs/Vercel.md)
 * [TailwindsCSS styling](https://tailwindcss.com/)
-
+* [Jest Testing](https://jestjs.io/en/)
 
 ### Local development
 * Create and checkout a new repository based on this template.
@@ -49,7 +50,10 @@ More information
 * `npm run build` to build the deployment package
 * `npm start` to run the production server.
 
-
+### Test 
+* place *.spec.js files in `__tests__` folders close to tested items
+* `npm test` to run the test suite
+* `npm run test:coverage` to get coverage
 
 ### First time deployment
 You will require accounts on 
@@ -60,7 +64,7 @@ You will require accounts on
 To deploy the production application run `vercel --prod ` in the root folder. (you will need to setup a vercel account)
 
 You will need to complete
-* Access keys for Auth0 and vercel in .env and vercel.conf
+* Access keys for Auth0 and vercel in .env.local and vercel.conf
 * prod url for app in .env, vercel.conf and Auth0 web app configuration. 
 
 
