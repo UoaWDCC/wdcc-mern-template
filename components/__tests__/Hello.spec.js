@@ -1,3 +1,4 @@
+/* eslint-env jest */
 import * as React from 'react'
 import { mount, shallow } from 'enzyme'
 import { Hello, Greet } from '../Hello'

@@ -1,3 +1,4 @@
+/* eslint-env jest */
 import * as React from 'react'
 import { mount } from 'enzyme'
 import { ProfileCard } from '../ProfileCard'
@@ -18,6 +19,5 @@ describe('ProfileCard Component', () => {
     expect(wrap.find('h4').text()).toBe(user.name)
     expect(wrap.find('p').text()).toBe(user.nickname)
     expect(wrap.find('span').text()).toBe('Extra texta')
-    
   })
 })
