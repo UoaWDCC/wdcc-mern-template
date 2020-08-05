@@ -6,7 +6,7 @@ export const ProfileCard = ({ user, children }) => {
       </div>
       <div className='flex-col flex-grow'>
         <div className='ml-6 pt-1'>
-          <h4 className='text-xl text-gray-900 leading-tight'>{user.name} </h4>
+          <h4 className='text-xl text-gray-900 leading-tight'>{user.name}</h4>
           <p className='text-base text-gray-600 leading-normal'>{user.nickname}</p>
         </div>
         <div className='ml-6 mr-1 '>
