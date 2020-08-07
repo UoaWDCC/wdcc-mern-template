@@ -2,7 +2,6 @@ import { MongoClient } from 'mongodb'
 import nextConnect from 'next-connect'
 import config from '../lib/config'
 
-const DB_NAME = 'wdcc'
 const client = new MongoClient(config.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
