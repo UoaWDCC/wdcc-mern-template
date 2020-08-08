@@ -16,6 +16,7 @@ const fetcher = (...args) => fetch(...args).then(res => res.json())
 function Report () {
   const { user, loading } = useFetchUser({ required: true })
   const { data, error } = useSWR(`${config.HOST}/api/events`, fetcher)
+  // console.log(data, error)
   // render data
   return (
     <Layout user={user} loading={loading}>
