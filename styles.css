@@ -1,5 +1,8 @@
 /* purgecss start ignore */
 @tailwind base;
+body {
+  @apply bg-gray-100;
+}
 h1 {
   @apply text-3xl font-thin leading-loose;
 }

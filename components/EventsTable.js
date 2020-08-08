@@ -1,3 +1,5 @@
+import moment from 'moment'
+
 /** Display the table of events
  TODO:
  * format the date/time using moment
@@ -6,15 +8,22 @@
  * use grid instead of table so it is responsive
  */
 
+export const EventItem = ({ event }) => {
+  return (
+    <tr>
+      <td>{event.name}</td>
+      <td>{moment(event.date).fromNow()}</td>
+      <td>{event.value}</td>
+      <td>{event.comment}</td>
+    </tr>
+  )
+}
 export const EventsTable = ({ events }) => {
   return (
     <table>
       <tbody>
         {events.map((el, index) =>
-          <tr key={index}>
-            <td>{el.name}</td>
-            <td>{el.date}</td>
-          </tr>
+          <EventItem key={el._id} event={el} />
         )}
       </tbody>
     </table>
