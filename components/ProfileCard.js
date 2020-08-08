@@ -1,6 +1,6 @@
 export const ProfileCard = ({ user, children }) => {
   return (
-    <div className='max-w-sm flex my-4 bg-white rounded-lg shadow-xl'>
+    <div className='max-w-sm flex my-4 bg-white rounded-lg shadow-md'>
       <div className='flex-shrink-0'>
         <img className='h-32 w-32 rounded-l-lg' src={user.picture} alt='user picture' />
       </div>
