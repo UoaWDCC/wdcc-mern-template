@@ -1,11 +1,19 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-const MenuItem = ({ children, href }) =>
-  <Link href={href}>
-    <li className='block mt-4 inline-block  rounded-md text-center bg-orange-200 hover:bg-orange-500 px-4 py-2 m-2 lg:mt-0 hover:text-white mr-4'>
-      <a className='no-underline hover:text-white'>{children}</a>
-    </li>
-  </Link>
+const MenuItem = ({ children, href }) => {
+  const router = useRouter()
+  const active = router.pathname === href
+  const inactiveClass = 'block mt-4 inline-block rounded-md text-center bg-orange-200 hover:bg-orange-500 px-4 py-2 m-2 lg:mt-0 hover:text-white mr-4'
+  const activeClass = 'block mt-4 inline-block rounded-md text-center bg-blue-200 hover:bg-blue-700 px-4 py-2 m-2 lg:mt-0 hover:text-white mr-4'
+  return (
+    <Link href={href}>
+      <li className={active ? activeClass : inactiveClass}>
+        <a className='no-underline hover:text-white'>{children}</a>
+      </li>
+    </Link>
+  )
+}
 
 function Header ({ user, loading }) {
   return (
