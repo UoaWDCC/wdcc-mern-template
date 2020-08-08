@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "next -p 3141",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3141",
     "lint": "standard",
     "fix": "standard --fix",
     "test": "jest",
