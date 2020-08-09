@@ -13,8 +13,13 @@ handler.use(mongodb)
 handler.get(async (req, res) => {
   // find returns a cursor which we need to iterate through to get the results.
   // use next or toArray
+  // Starts the timer
+  // console.time('get events')
   const doc = await req.db.collection('events').find().toArray()
   // console.log(doc)
+  // Ends the timer and print the time
+  // taken by the piece of code
+  // console.timeEnd('get events')
   res.json(doc)
 })
 

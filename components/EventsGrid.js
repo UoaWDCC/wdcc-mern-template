@@ -21,7 +21,7 @@ export const EventItem = ({ event }) => {
   )
 }
 
-export const EventsTable = ({ events }) => {
+export const EventsGrid = ({ events }) => {
   return (
     <div className='flex flex-wrap'>
       {events.map((el, index) =>
@@ -34,4 +34,4 @@ export const EventsTable = ({ events }) => {
   )
 }
 
-export default EventsTable
+export default EventsGrid
