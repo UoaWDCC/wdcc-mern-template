@@ -1,9 +1,12 @@
 import { useForm } from 'react-hook-form'
 import { logEvent } from '../lib/logEvent'
+import Spinner from '../components/Spinner'
+import { useState } from 'react'
 
 export const EventForm = ({ user }) => {
   const { register, handleSubmit } = useForm()
-  function onSubmit (data) {
+  const [busy, setBusy] = useState(false)
+  const onSubmit = async (data) => {
     console.log(data)
     const event = {
       name: user.nickname,
@@ -12,7 +15,9 @@ export const EventForm = ({ user }) => {
       comment: data.comment
       // date: added server side so we can't lie
     }
-    logEvent(event)
+    setBusy(true)
+    await logEvent(event)
+    setBusy(false)
   }
 
   return (
@@ -21,14 +26,15 @@ export const EventForm = ({ user }) => {
       onSubmit={handleSubmit(onSubmit)}
     >
       <label className='block text-gray-700 text-sm font-bold mb-2'>
-        Value
+        Mood
         <div className='mb-4'>
-          <input
-            name='value'
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-            ref={register}
-            placeholder='value'
-          />
+          <span className='mr-2'>Sad</span>
+          <input className='radio-bar' name='value' type='radio' value='1' ref={register({ required: true })} />
+          <input className='radio-bar' name='value' type='radio' value='2' ref={register({ required: true })} />
+          <input className='radio-bar' name='value' type='radio' value='3' ref={register({ required: true })} />
+          <input className='radio-bar' name='value' type='radio' value='4' ref={register({ required: true })} />
+          <input className='radio-bar' name='value' type='radio' value='5' ref={register({ required: true })} />
+          <span className='ml-2'>Happy</span>
         </div>
       </label>
 
@@ -45,6 +51,7 @@ export const EventForm = ({ user }) => {
       </label>
 
       <button className='btn-blue' type='submit'>Submit</button>
+      {busy && <Spinner />}
     </form>
   )
 }
